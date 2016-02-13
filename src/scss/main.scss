@@ -1,0 +1,158 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* DO NOT EDIT ABOVE THIS COMMENT */
+
+.page-wrap {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+}
+
+header {
+  background-color: #CFD8DC;
+}
+header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.main-nav {
+  float: left;
+  padding: 10px;
+}
+.main-nav a {
+  text-decoration: none;
+  background-color: #0277BD;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* DO NOT MODIFY THE WIDTH, HEIGHT, OR SCALE OF THE LOGO */
+.logo {
+  width: 200px !important;
+  height: 100px !important;
+  color: #ffffff;
+  background-color: #424242;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 2em;
+  float: left;
+}
+
+article {
+  background-color: #FFF9C4;
+  padding: 0 10px;
+}
+article:before, article:after {
+  content: '';
+  display: table;
+}
+
+section {
+  padding: 10px;
+}
+
+.main-content {
+  background-color: #BDBDBD;
+}
+
+.main-content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.main-content > div {
+  width: 328px;
+  height: 200px;
+  float: left;
+  background-color: #607D8B;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+.main-content > div:last-child {
+  margin-right: 0;
+}
+
+.main-content > div p {
+  font-size: 0.9em;
+}
+
+.img-bg {
+  background: transparent url('../images/JHF0BSDV2E.jpg') 0 0 no-repeat;
+  background-size: 100% auto;
+}
+
+.sub-content {
+  background-color: #B2EBF2;
+}
+
+.sub-content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.sub-content [class*='item-'] {
+  background-color: #616161;
+  padding: 10px;
+  height: 200px;
+  float: left;
+}
+
+.sub-content [class*='item-'] p {
+  font-size: 0.8em;
+}
+
+.item-small {
+  width: 246px;
+  margin-right: 10px;
+}
+
+.item-small nav a {
+  display: block;
+  color: #64FFDA;
+  font-size: 0.8em;
+}
+
+.item-medium {
+  width: 492px;
+}
+
+.item-medium img {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #00838F;
+  color: #ffffff;
+}
+
+footer h4, footer p {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+footer:before, footer:after {
+  content: '';
+  display: table;
+}
+
+@import 'responsive';
+@import 'responsive2';
+@import 'responsive3';
+@import 'navbar';

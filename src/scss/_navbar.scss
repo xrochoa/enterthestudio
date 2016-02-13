@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+	.logo {
+		//float: none;
+		width: 100%;
+	}
+
+    .main-nav {
+        float: none;
+        padding: 10px;
+    }
+    .main-nav a {
+        text-decoration: none;
+        padding: 10px;
+        font-weight: bold;
+        display: initial;
+        //width: 100%;
+    }
+}

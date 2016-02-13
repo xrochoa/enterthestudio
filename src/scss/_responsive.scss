@@ -1,0 +1,25 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .page-wrap {
+        width: 768px;
+    }
+    .main-content > div {
+        width: 242px;
+    }
+    .img-bg {
+        background-size: cover;
+        background-position: center center;
+    }
+    .sub-content [class*='item-'] {
+        height: 240px;
+    }
+    .item-small {
+        width: 182px;
+    }
+    .item-medium {
+        width: 364px;
+    }
+    footer h4,
+    footer p {
+        width: 768px;
+    }
+}
