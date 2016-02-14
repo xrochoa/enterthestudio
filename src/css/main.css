@@ -12,7 +12,8 @@ html {
   background-color: #F5F5F5; }
 
 header {
-  background-color: #CFD8DC; }
+  background-color: #CFD8DC;
+  position: relative; }
 
 header:after {
   content: '';
@@ -191,14 +192,27 @@ footer:before, footer:after {
   footer {
     font-size: 0.8em; } }
 
+.toggle-btn {
+  background: url("../images/ic_menu_black_24dp_2x.png") 0 0 no-repeat;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer; }
+
 @media (max-width: 768px) {
   .logo {
-    width: 100%; }
+    float: none; }
   .main-nav {
     float: none;
-    padding: 10px; }
+    padding: 0;
+    max-height: 0;
+    overflow: hidden; }
+    .main-nav.open {
+      transition: max-height 1s ease;
+      max-height: 500px; }
   .main-nav a {
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bold;
-    display: initial; } }
+    display: block;
+    margin: 10px; } }

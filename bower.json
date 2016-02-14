@@ -1,0 +1,21 @@
+{
+  "name": "enterthestudio",
+  "description": "A challenge for Enter the Studio",
+  "main": "gulpfile.js",
+  "authors": [
+    "Xavier Reyes Ochoa <xareyesochoa@gmail.com> (http://www.xaviro.com)"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.0"
+  }
+}
