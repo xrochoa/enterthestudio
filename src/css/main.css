@@ -26,11 +26,18 @@ header:after {
 
 .main-nav a {
   text-decoration: none;
-  background-color: #0277BD;
   color: #ffffff;
   padding: 10px;
   font-weight: bold;
-  display: inline-block; }
+  display: inline-block;
+  text-indent: -20px;
+  opacity: 0;
+  transition: background-color 1s ease 1s, text-indent 2s ease, opacity 1s ease;
+  position: relative; }
+  .main-nav a.animate {
+    background-color: #0277BD;
+    text-indent: 0;
+    opacity: 1; }
 
 /* DO NOT MODIFY THE WIDTH, HEIGHT, OR SCALE OF THE LOGO */
 .logo {

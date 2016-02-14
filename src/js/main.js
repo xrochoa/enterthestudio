@@ -12,7 +12,8 @@
 
     //on load
     showToggleButton();
-    
+    $('.main-nav a').addClass('animate');
+
     //on resize
     $(window).resize(function() {
         showToggleButton();
