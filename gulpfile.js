@@ -10,6 +10,9 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCss = require('gulp-minify-css');
+//html
+var cdnizer = require("gulp-cdnizer");
+var minifyHTML = require('gulp-minify-html');
 //img
 var imagemin = require('gulp-imagemin');
 //server
@@ -61,6 +64,12 @@ gulp.task('css', function() {
 //Copies unmodified html (could be minified with gulp-minify-html)
 gulp.task('html', function() {
     return gulp.src('src/**/*.html')
+        .pipe(cdnizer([{
+            file: 'jquery/dist/jquery.js',
+            package: 'jquery',
+            cdn: 'https://ajax.googleapis.com/ajax/libs/jquery/${ version }/jquery.min.js'
+        }]))
+        .pipe(minifyHTML())
         .pipe(gulp.dest("dist"))
         .pipe(livereload());
 });

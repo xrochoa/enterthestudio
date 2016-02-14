@@ -97,7 +97,8 @@ section {
 
 .img-bg {
   background: transparent url("../images/JHF0BSDV2E.jpg") 0 0 no-repeat;
-  background-size: 100% auto; }
+  background-size: cover;
+  background-position: center center; }
 
 .sub-content {
   background-color: #B2EBF2; }
@@ -167,9 +168,6 @@ footer:after {
     width: 768px; }
   .main-content > div {
     width: 242px; }
-  .img-bg {
-    background-size: cover;
-    background-position: center center; }
   .sub-content [class*='item-'] {
     height: 240px; }
   .item-small {
@@ -187,9 +185,6 @@ footer:after {
   .main-content > div {
     width: 176px;
     height: 250px; }
-  .img-bg {
-    background-size: cover;
-    background-position: center center; }
   .sub-content [class*='item-'] {
     height: 320px; }
   .item-small {
@@ -210,9 +205,6 @@ footer:after {
     width: 300px;
     height: 180px;
     margin-bottom: 10px; }
-  .img-bg {
-    background-size: cover;
-    background-position: center center; }
   .sub-content [class*='item-'] {
     height: 200px; }
   .item-small {

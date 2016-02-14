@@ -6,7 +6,7 @@ bower_components
 node_modules
 
 #files and folders that are deleted and recreated everytime gulp runs
-dist
+#dist
 src/js/bundle.js
 src/css/style.css
 
