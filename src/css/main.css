@@ -2,7 +2,9 @@
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; }
 
 /* DO NOT EDIT ABOVE THIS COMMENT */
@@ -57,7 +59,8 @@ article {
   background-color: #FFF9C4;
   padding: 0 10px; }
 
-article:before, article:after {
+article:before,
+article:after {
   content: '';
   display: table; }
 
@@ -131,17 +134,31 @@ section {
   float: left;
   margin: 0 10px 0 0; }
 
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0 0 150px; }
+
 footer {
   width: 100%;
   background-color: #00838F;
-  color: #ffffff; }
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  overflow: hidden; }
 
-footer h4, footer p {
+footer h4,
+footer p {
   width: 1024px;
   margin: 0 auto;
   padding: 10px; }
 
-footer:before, footer:after {
+footer:before,
+footer:after {
   content: '';
   display: table; }
 
@@ -161,7 +178,8 @@ footer:before, footer:after {
     width: 364px; }
   footer h4,
   footer p {
-    width: 768px; } }
+    width: 768px;
+    font-size: 0.8em; } }
 
 @media (min-width: 568px) and (max-width: 768px) {
   .page-wrap {
@@ -180,7 +198,8 @@ footer:before, footer:after {
     width: 264px; }
   footer h4,
   footer p {
-    width: 568px; } }
+    width: 568px;
+    font-size: 0.7em; } }
 
 @media (max-width: 568px) {
   .page-wrap {
@@ -204,9 +223,14 @@ footer:before, footer:after {
   footer h4,
   footer p {
     width: 320px; }
-  article,
+  article {
+    height: 280px;
+    font-size: 0.8em; }
   footer {
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+    height: 230px; }
+  body {
+    margin-bottom: 230px; } }
 
 .toggle-btn {
   background: url("../images/ic_menu_black_24dp_2x.png") 0 0 no-repeat;

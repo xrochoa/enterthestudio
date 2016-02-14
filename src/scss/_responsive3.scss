@@ -3,7 +3,7 @@
         width: 320px;
     }
     section:first-of-type {
-    	padding-bottom: 0px;
+        padding-bottom: 0px;
     }
     .main-content > div {
         width: 300px;
@@ -28,8 +28,15 @@
     footer p {
         width: 320px;
     }
-    article,
+    article {
+        height: 280px;
+        font-size: 0.8em;
+    }
     footer {
         font-size: 0.8em;
+        height: 230px;
+    }
+    body {
+        margin-bottom: 230px;
     }
 }
