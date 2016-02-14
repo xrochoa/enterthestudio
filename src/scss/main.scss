@@ -43,6 +43,10 @@ header:after {
       text-indent: 0;
       opacity: 1;
   }
+    &:hover {
+      transition: color .3s ease;
+      color: black;
+    }
 }
 
 /* DO NOT MODIFY THE WIDTH, HEIGHT, OR SCALE OF THE LOGO */
@@ -95,6 +99,15 @@ section {
 
 .main-content > div p {
   font-size: 0.9em;
+}
+
+//custom bullets
+.main-content li {
+list-style: none;
+background: url('../images/check.png') 0 0 no-repeat;
+padding-left: 20px;
+margin-left: -20px;
+
 }
 
 .img-bg {

@@ -38,6 +38,9 @@ header:after {
     background-color: #0277BD;
     text-indent: 0;
     opacity: 1; }
+  .main-nav a:hover {
+    transition: color .3s ease;
+    color: black; }
 
 /* DO NOT MODIFY THE WIDTH, HEIGHT, OR SCALE OF THE LOGO */
 .logo {
@@ -82,6 +85,12 @@ section {
 
 .main-content > div p {
   font-size: 0.9em; }
+
+.main-content li {
+  list-style: none;
+  background: url("../images/check.png") 0 0 no-repeat;
+  padding-left: 20px;
+  margin-left: -20px; }
 
 .img-bg {
   background: transparent url("../images/JHF0BSDV2E.jpg") 0 0 no-repeat;
@@ -207,7 +216,11 @@ footer:before, footer:after {
   position: absolute;
   top: 0;
   right: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity .3s ease; }
+  .toggle-btn:hover {
+    opacity: 1; }
 
 @media (max-width: 768px) {
   .logo {
@@ -222,4 +235,7 @@ footer:before, footer:after {
       max-height: 500px; }
   .main-nav a {
     display: block;
-    margin: 10px; } }
+    margin: 10px; }
+    .main-nav a:hover {
+      transition: padding .3s ease;
+      padding: 10px 20px; } }
